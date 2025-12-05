@@ -23,18 +23,23 @@
               900: '#312e81'
             }
           },
-          boxShadow: { soft: '0 8px 24px rgba(79,70,229,0.10)' }
+          boxShadow: {
+            soft: '0 8px 24px rgba(79,70,229,0.10)'
+          }
         }
       }
     }
   </script>
-  <meta name="description" content="Portfolio of Keerthana Garbani — Graduate CS student seeking part-time roles and internships." />
+  <meta name="description" content="Portfolio of Keerthana Garbani — Graduate CS student, aspiring Cloud/DevOps & Data intern, and early-stage product/innovation thinker." />
 </head>
 <body class="min-h-screen bg-gradient-to-b from-brand-50 via-white to-slate-50 text-slate-900">
   <!-- Top bar -->
   <div class="bg-gradient-to-r from-brand-700 via-brand-600 to-brand-500 text-white">
     <div class="max-w-5xl mx-auto px-5 py-2 text-sm flex flex-wrap items-center justify-center gap-3">
-      <span class="font-medium">Open to part-time roles & internships</span>
+      <span class="flex items-center gap-2 font-medium">
+        <span class="inline-flex h-2 w-2 rounded-full bg-emerald-300 animate-pulse"></span>
+        Open to part-time roles & internships
+      </span>
       <span class="opacity-80">•</span>
       <a class="underline decoration-white/40 hover:decoration-white" href="mailto:keerthanagarbani@gmail.com">keerthanagarbani@gmail.com</a>
     </div>
@@ -42,45 +47,67 @@
 
   <!-- Header / Hero -->
   <header class="max-w-5xl mx-auto px-5 pt-10 pb-6">
-    <div class="flex flex-col items-center text-center gap-3">
+    <div class="relative rounded-3xl border bg-white/80 px-6 py-8 shadow-soft overflow-hidden">
+      <!-- soft glow background -->
+      <div class="pointer-events-none absolute inset-x-10 -top-10 h-32 bg-gradient-to-r from-brand-200/60 via-fuchsia-100/80 to-brand-100/60 blur-3xl"></div>
 
-      <!-- FIXED H1 TAG -->
-      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-800">
-        KEERTHANA GARBANI
-      </h1>
+      <div class="relative z-10 flex flex-col items-center text-center gap-3">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-800">
+          KEERTHANA GARBANI
+        </h1>
 
-      <img src="headshot.jpg" alt="Keerthana Garbani"
+        <p class="text-xs uppercase tracking-[0.2em] text-brand-500">
+          Graduate Computer Science • Cloud / DevOps • Data
+        </p>
+
+        <img
+          src="headshot.jpg"
+          alt="Keerthana Garbani"
           class="w-28 h-28 rounded-full ring-4 ring-brand-200 object-cover mt-3 shadow-soft"
-          loading="lazy" />
+          loading="lazy"
+        />
 
-      <p class="text-base md:text-lg text-slate-600">
-        Graduate CS Student • Cloud/DevOps & Data Intern Candidate
-      </p>
-      <div class="flex flex-wrap items-center justify-center gap-3 text-sm text-slate-600">
-        <a class="inline-flex items-center gap-2 hover:text-brand-700 underline underline-offset-4" href="mailto:keerthanagarbani@gmail.com">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75Zm2.443-.75l7.115 5.084L19 6h-14.307Zm15.557 12V8.25l-7.63 5.453a1.5 1.5 0 0 1-1.74 0L3 8.25v9.75a.75.75 0 0 0 .75.75h15a.75.75 0 0 0 .75-.75Z"/></svg>
-          keerthanagarbani@gmail.com
-        </a>
-        <span>•</span>
-        <span>Fairborn, OH</span>
-        <span>•</span>
-        <a class="inline-flex items-center gap-2 hover:text-brand-700 underline underline-offset-4" href="https://www.linkedin.com/in/keerthana-garbani-581420237" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11.846 20h-3.154v-10.769h3.154v10.769zm-1.577-12.308c-1.012 0-1.846-.835-1.846-1.846 0-1.012.834-1.846 1.846-1.846s1.846.834 1.846 1.846c0 1.011-.834 1.846-1.846 1.846zm13.423 12.308h-3.154v-5.846c0-1.394-.027-3.188-1.943-3.188-1.943 0-2.24 1.517-2.24 3.086v5.948h-3.154v-10.769h3.028v1.472h.042c.422-.8 1.451-1.643 2.986-1.643 3.19 0 3.778 2.101 3.778 4.83v6.11z"/></svg>
-          LinkedIn
-        </a>
-        <span>•</span>
-        <a class="inline-flex items-center gap-2 hover:text-brand-700 underline underline-offset-4" href="https://github.com/GarbaniKeerthana" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.77 5.46.77 11.73c0 4.94 3.2 9.13 7.63 10.61.56.1.77-.24.77-.54 0-.27-.01-1.16-.02-2.1-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.07-.66.07-.66 1.09.08 1.66 1.12 1.66 1.12.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.46-2.47-.28-5.07-1.23-5.07-5.47 0-1.21.43-2.19 1.12-2.96-.11-.28-.49-1.41.11-2.95 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 2.78-.37c.94 0 1.89.12 2.78.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.22 2.67.11 2.95.69.77 1.12 1.75 1.12 2.96 0 4.25-2.6 5.18-5.08 5.46.39.34.74 1.01.74 2.04 0 1.48-.01 2.67-.01 3.04 0 .3.21.65.78.54 4.42-1.47 7.62-5.67 7.62-10.61C23.23 5.46 18.27.5 12 .5z"/></svg>
-          GitHub
-        </a>
+        <!-- badges -->
+        <div class="mt-2 flex flex-wrap items-center justify-center gap-2 text-xs">
+          <span class="inline-flex items-center gap-1 rounded-full bg-brand-50 px-3 py-1 text-brand-700 border border-brand-100">
+            💻 Graduate CS Student
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-3 py-1 text-emerald-700 border border-emerald-100">
+            ☁️ Cloud / DevOps & Data Intern Candidate
+          </span>
+          <span class="inline-flex items-center gap-1 rounded-full bg-rose-50 px-3 py-1 text-rose-700 border border-rose-100">
+            💡 Innovation & Patent Concept
+          </span>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 text-sm text-slate-600 mt-3">
+          <a class="inline-flex items-center gap-2 hover:text-brand-700 underline underline-offset-4" href="mailto:keerthanagarbani@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M2.25 6.75A2.25 2.25 0 0 1 4.5 4.5h15a2.25 2.25 0 0 1 2.25 2.25v10.5A2.25 2.25 0 0 1 19.5 19.5h-15A2.25 2.25 0 0 1 2.25 17.25V6.75Zm2.443-.75l7.115 5.084L19 6h-14.307Zm15.557 12V8.25l-7.63 5.453a1.5 1.5 0 0 1-1.74 0L3 8.25v9.75a.75.75 0 0 0 .75.75h15a.75.75 0 0 0 .75-.75Z"/></svg>
+            keerthanagarbani@gmail.com
+          </a>
+          <span>•</span>
+          <span>Fairborn, OH</span>
+          <span>•</span>
+          <a class="inline-flex items-center gap-2 hover:text-brand-700 underline underline-offset-4" href="https://www.linkedin.com/in/keerthana-garbani-581420237" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11.846 20h-3.154v-10.769h3.154v10.769zm-1.577-12.308c-1.012 0-1.846-.835-1.846-1.846 0-1.012.834-1.846 1.846-1.846s1.846.834 1.846 1.846c0 1.011-.834 1.846-1.846 1.846zm13.423 12.308h-3.154v-5.846c0-1.394-.027-3.188-1.943-3.188-1.943 0-2.24 1.517-2.24 3.086v5.948h-3.154v-10.769h3.028v1.472h.042c.422-.8 1.451-1.643 2.986-1.643 3.19 0 3.778 2.101 3.778 4.83v6.11z"/></svg>
+            LinkedIn
+          </a>
+          <span>•</span>
+          <a class="inline-flex items-center gap-2 hover:text-brand-700 underline underline-offset-4" href="https://github.com/GarbaniKeerthana" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.77 5.46.77 11.73c0 4.94 3.2 9.13 7.63 10.61.56.1.77-.24.77-.54 0-.27-.01-1.16-.02-2.1-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.07-.66.07-.66 1.09.08 1.66 1.12 1.66 1.12.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.46-2.47-.28-5.07-1.23-5.07-5.47 0-1.21.43-2.19 1.12-2.96-.11-.28-.49-1.41.11-2.95 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 2.78-.37c.94 0 1.89.12 2.78.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.22 2.67.11 2.95.69.77 1.12 1.75 1.12 2.96 0 4.25-2.6 5.18-5.08 5.46.39.34.74 1.01.74 2.04 0 1.48-.01 2.67-.01 3.04 0 .3.21.65.78.54 4.42-1.47 7.62-5.67 7.62-10.61C23.23 5.46 18.27.5 12 .5z"/></svg>
+            GitHub
+          </a>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- Professional Summary -->
   <section class="max-w-5xl mx-auto px-5 py-6">
-    <h2 class="text-xl font-semibold mb-3 text-brand-800">Professional Summary</h2>
-    <blockquote class="rounded-2xl border bg-white/70 p-5 shadow-soft leading-relaxed text-slate-700">
+    <h2 class="text-xl font-semibold mb-3 text-brand-800 flex items-center gap-2">
+      🧾 <span>Professional Summary</span>
+    </h2>
+    <blockquote class="rounded-2xl border bg-white/80 p-5 shadow-soft leading-relaxed text-slate-700">
       “Graduate Computer Science student (M.S., CGPA 3.5, expected Dec 2026) with solid foundations in
       programming, data structures, databases, and operating systems. Comfortable with Python, SQL, Linux/Bash,
       and Git; quick to learn and careful with details. Seeking an internship/entry-level role where I can contribute,
@@ -90,41 +117,43 @@
 
   <!-- Skills -->
   <section class="max-w-5xl mx-auto px-5 py-6">
-    <h2 class="text-xl font-semibold mb-3 text-brand-800">Skills</h2>
+    <h2 class="text-xl font-semibold mb-3 text-brand-800 flex items-center gap-2">
+      🛠️ <span>Skills</span>
+    </h2>
     <div class="grid md:grid-cols-2 gap-4">
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-0.5 transition">
         <h3 class="font-medium mb-2">Scripting / Programming</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Python</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Bash</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">SQL (MySQL)</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Python</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Bash</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">SQL (MySQL)</span>
         </div>
       </div>
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-0.5 transition">
         <h3 class="font-medium mb-2">Data / Analytics</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Pandas</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">NumPy</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">scikit-learn (basics)</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Jupyter</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Excel</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Pandas</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">NumPy</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">scikit-learn (basics)</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Jupyter</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Excel</span>
         </div>
       </div>
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-0.5 transition">
         <h3 class="font-medium mb-2">Cloud / Systems</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Linux</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Git</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">SSH/SCP/SFTP</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">OSC (Pitzer)</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Linux</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Git</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">SSH/SCP/SFTP</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">OSC (Pitzer)</span>
         </div>
       </div>
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-0.5 transition">
         <h3 class="font-medium mb-2">Tools</h3>
         <div class="flex flex-wrap gap-2">
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">Google Sheets</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">matplotlib</span>
-          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700">FastAPI/Flask (basics)</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">Google Sheets</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">matplotlib</span>
+          <span class="inline-flex items-center rounded-full border px-3 py-1 text-xs bg-brand-50 text-brand-700 hover:bg-brand-100 transition">FastAPI/Flask (basics)</span>
         </div>
       </div>
     </div>
@@ -133,24 +162,27 @@
   <!-- Projects -->
   <section class="max-w-5xl mx-auto px-5 py-6">
     <div class="flex items-baseline justify-between">
-      <h2 class="text-xl font-semibold mb-3 text-brand-800">Projects</h2>
+      <h2 class="text-xl font-semibold mb-3 text-brand-800 flex items-center gap-2">
+        🚀 <span>Projects</span>
+      </h2>
       <a class="text-sm underline underline-offset-4 text-slate-600 hover:text-brand-700" href="https://github.com/GarbaniKeerthana" target="_blank" rel="noopener">All projects →</a>
     </div>
     <div class="grid md:grid-cols-2 gap-4">
-
       <!-- ML Project -->
-      <article class="rounded-2xl border bg-white p-4 shadow-soft">
+      <article class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-1 transition">
         <div class="flex items-baseline justify-between gap-2">
           <h3 class="font-semibold leading-snug">Adversarial Attacks on GNNs (DeepFool)</h3>
           <span class="text-xs text-slate-500 whitespace-nowrap">2025</span>
         </div>
-        <p class="mt-2 text-slate-700 text-sm">Demonstrated DeepFool-style feature perturbations on a GCN for node classification; highlighted trustworthy-ML evaluation beyond accuracy.</p>
+        <p class="mt-2 text-slate-700 text-sm">
+          Demonstrated DeepFool-style feature perturbations on a GCN for node classification; highlighted trustworthy-ML evaluation beyond accuracy.
+        </p>
         <div class="mt-3 flex flex-wrap gap-2">
-          <a class="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 text-xs bg-brand-600 text-white hover:bg-brand-700" href="https://github.com/GarbaniKeerthana/Adversarial-Attacks-on-Graph-Neural-Networks-using-DeepFool" target="_blank" rel="noopener">
+          <a class="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 text-xs bg-brand-600 text-white hover:bg-brand-700 transition" href="https://github.com/GarbaniKeerthana/Adversarial-Attacks-on-Graph-Neural-Networks-using-DeepFool" target="_blank" rel="noopener">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.77 5.46.77 11.73c0 4.94 3.2 9.13 7.63 10.61.56.1.77-.24.77-.54 0-.27-.01-1.16-.02-2.1-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.07-.66.07-.66 1.09.08 1.66 1.12 1.66 1.12.98 1.68 2.57 1.19 3.2.91.1-.71.38-1.19.69-1.46-2.47-.28-5.07-1.23-5.07-5.47 0-1.21.43-2.19 1.12-2.96-.11-.28-.49-1.41.11-2.95 0 0 .93-.3 3.05 1.13a10.6 10.6 0 0 1 2.78-.37c.94 0 1.89.12 2.78.37 2.12-1.43 3.05-1.13 3.05-1.13.6 1.54.22 2.67.11 2.95.69.77 1.12 1.75 1.12 2.96 0 4.25-2.6 5.18-5.08 5.46.39.34.74 1.01.74 2.04 0 1.48-.01 2.67-.01 3.04 0 .3.21.65.78.54 4.42-1.47 7.62-5.67 7.62-10.61C23.23 5.46 18.27.5 12 .5z"/></svg>
             View Code
           </a>
-          <a class="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 text-xs border hover:bg-brand-50" href="https://colab.research.google.com/github/GarbaniKeerthana/Adversarial-Attacks-on-Graph-Neural-Networks-using-DeepFool/blob/main/Keerthana-Garbani-finalprojectcode.ipynb" target="_blank" rel="noopener">
+          <a class="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 text-xs border hover:bg-brand-50 transition" href="https://colab.research.google.com/github/GarbaniKeerthana/Adversarial-Attacks-on-Graph-Neural-Networks-using-DeepFool/blob/main/Keerthana-Garbani-finalprojectcode.ipynb" target="_blank" rel="noopener">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 256 256" fill="currentColor"><path d="M128 40C77.9 40 40 77.9 40 128s37.9 88 88 88 88-37.9 88-88S178.1 40 128 40zm-8 128h-16V88h16zm32 0h-16V88h16z"/></svg>
             Open in Colab
           </a>
@@ -163,12 +195,14 @@
       </article>
 
       <!-- Inventory Tracker -->
-      <article class="rounded-2xl border bg-white p-4 shadow-soft">
+      <article class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-1 transition">
         <div class="flex items-baseline justify-between gap-2">
           <h3 class="font-semibold leading-snug">Inventory & Reorder Tracker (Google Sheets)</h3>
           <span class="text-xs text-slate-500 whitespace-nowrap">2025</span>
         </div>
-        <p class="mt-2 text-slate-700 text-sm">Low-code inventory with dropdown validations, automatic “LOW” flags, and pick-list view; formulas and a mini dashboard.</p>
+        <p class="mt-2 text-slate-700 text-sm">
+          Low-code inventory with dropdown validations, automatic “LOW” flags, and pick-list view; formulas and a mini dashboard.
+        </p>
         <div class="mt-3 flex flex-wrap gap-2">
           <span class="rounded-full bg-slate-100 text-slate-700 text-xs px-3 py-1">Google Sheets</span>
           <span class="rounded-full bg-slate-100 text-slate-700 text-xs px-3 py-1">FILTER/SORT</span>
@@ -177,55 +211,61 @@
       </article>
 
       <!-- OSC Bash CLI -->
-      <article class="rounded-2xl border bg-white p-4 shadow-soft md:col-span-2">
+      <article class="rounded-2xl border bg-white p-4 shadow-soft md:col-span-2 hover:shadow-lg hover:-translate-y-1 transition">
         <div class="flex items-baseline justify-between gap-2">
           <h3 class="font-semibold leading-snug">Nearest-Neighbor CLI (Bash) — OSC (Pitzer)</h3>
           <span class="text-xs text-slate-500 whitespace-nowrap">2025</span>
         </div>
-        <p class="mt-2 text-slate-700 text-sm">Parsed CSV input and computed 3D nearest neighbor using <code>bc</code>; robust input validation and single-line output; packaged deliverables and ran on OSC via SSH/SCP.</p>
+        <p class="mt-2 text-slate-700 text-sm">
+          Parsed CSV input and computed 3D nearest neighbor using <code>bc</code>; robust input validation and single-line output;
+          packaged deliverables and ran on OSC via SSH/SCP.
+        </p>
         <div class="mt-3 flex flex-wrap gap-2">
           <span class="rounded-full bg-slate-100 text-slate-700 text-xs px-3 py-1">Linux</span>
           <span class="rounded-full bg-slate-100 text-slate-700 text-xs px-3 py-1">Bash</span>
           <span class="rounded-full bg-slate-100 text-slate-700 text-xs px-3 py-1">bc</span>
         </div>
       </article>
-
     </div>
   </section>
 
-
-  <!-- ⭐ NEW: INNOVATION / PATENT SECTION -->
+  <!-- Innovation / Patent -->
   <section class="max-w-5xl mx-auto px-5 py-6">
-    <h2 class="text-xl font-semibold mb-3 text-brand-800">Innovation &amp; Patent Concept</h2>
-    <div class="rounded-2xl border bg-white p-4 shadow-soft text-sm text-slate-700 space-y-2">
-      <p class="font-semibold">
-        Provisional Patent Concept — Smart Cross-Device Copy–Paste Accessory (Exploratory)
-      </p>
-      <p>
-        Designed a next-generation computing accessory that allows users to “copy” text, code,
-        or data from one device and “paste” it onto another without relying on cloud sync or
-        shared accounts. The concept functions like a physical productivity tool—similar to a keyboard
-        or mouse—but built specifically for secure, fast information transfer.
-      </p>
-      <ul class="list-disc pl-5 space-y-1">
-        <li>Stylus-like hardware device acting as a bridge between laptops, tablets, and desktops.</li>
-        <li>Offline, hardware-based transfer method aimed at protecting sensitive data.</li>
-        <li>Universal productivity companion for students, developers, and professionals.</li>
-        <li>Potential applicability for manufacturers (HP, Dell, Logitech, etc.).</li>
-      </ul>
-      <p class="text-xs text-slate-500">
-        Status: early-stage concept under evaluation for potential provisional patent filing.
-      </p>
+    <h2 class="text-xl font-semibold mb-3 text-brand-800 flex items-center gap-2">
+      💡 <span>Innovation &amp; Patent Concept</span>
+    </h2>
+    <div class="relative rounded-3xl border bg-gradient-to-r from-brand-50 via-rose-50 to-brand-50 p-5 shadow-soft overflow-hidden">
+      <div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-rose-200/40 blur-2xl"></div>
+      <div class="relative z-10 text-sm text-slate-700 space-y-2">
+        <p class="font-semibold flex items-center gap-2">
+          <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white shadow border text-xs">IP</span>
+          Provisional Patent Concept — Smart Cross-Device Copy–Paste Accessory (Exploratory)
+        </p>
+        <p>
+          Designed a next-generation computing accessory that allows users to “copy” text, code, or data from one device and
+          “paste” it onto another without relying on cloud sync or shared accounts. The concept functions like a physical
+          productivity tool—similar to a keyboard or mouse—but built specifically for secure, fast information transfer.
+        </p>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Stylus-like hardware device acting as a bridge between laptops, tablets, and desktops.</li>
+          <li>Offline, hardware-based transfer method aimed at protecting sensitive data.</li>
+          <li>Universal productivity companion for students, developers, and professionals.</li>
+          <li>Potential applicability for manufacturers (HP, Dell, Logitech, etc.).</li>
+        </ul>
+        <p class="text-xs text-slate-500">
+          Status: early-stage concept under evaluation for potential provisional patent filing.
+        </p>
+      </div>
     </div>
   </section>
-
 
   <!-- Experience -->
   <section class="max-w-5xl mx-auto px-5 py-6">
-    <h2 class="text-xl font-semibold mb-3 text-brand-800">Experience</h2>
+    <h2 class="text-xl font-semibold mb-3 text-brand-800 flex items-center gap-2">
+      💼 <span>Experience</span>
+    </h2>
     <div class="grid md:grid-cols-2 gap-4">
-
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-1 transition">
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <h3 class="font-semibold">Data Science Intern — BrainOvision</h3>
           <span class="text-xs text-slate-500">Remote</span>
@@ -236,8 +276,7 @@
           <li>Collaborated across teams and communicated results with visuals and concise notes.</li>
         </ul>
       </div>
-
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-1 transition">
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <h3 class="font-semibold">Data Science / AI & ML Intern — APSCHE (Andhra Pradesh, India)</h3>
           <span class="text-xs text-slate-500">Jan 2024 – Apr 2024</span>
@@ -248,22 +287,22 @@
           <li>Prototyped workflow for decision-support system development.</li>
         </ul>
       </div>
-
     </div>
   </section>
 
   <!-- Education -->
   <section class="max-w-5xl mx-auto px-5 py-6">
-    <h2 class="text-xl font-semibold mb-3 text-brand-800">Education</h2>
+    <h2 class="text-xl font-semibold mb-3 text-brand-800 flex items-center gap-2">
+      🎓 <span>Education</span>
+    </h2>
     <div class="grid gap-3">
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-0.5 transition">
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <h3 class="font-medium">Wright State University, Dayton, OH</h3>
           <span class="text-sm text-slate-500">M.S. Computer Science (CGPA 3.5/4.0), Expected Dec 2026</span>
         </div>
       </div>
-
-      <div class="rounded-2xl border bg-white p-4 shadow-soft">
+      <div class="rounded-2xl border bg-white p-4 shadow-soft hover:shadow-lg hover:-translate-y-0.5 transition">
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <h3 class="font-medium">Sir C.R. Reddy College of Engineering, Eluru, India</h3>
           <span class="text-sm text-slate-500">B.Tech, Information Technology (2020–2024)</span>
@@ -275,16 +314,25 @@
   <!-- Contact -->
   <footer id="contact" class="max-w-5xl mx-auto px-5 py-10">
     <div class="rounded-2xl border bg-white p-6 shadow-soft text-center">
-      <h2 class="text-xl font-semibold text-brand-800">Let’s talk</h2>
+      <h2 class="text-xl font-semibold text-brand-800 flex items-center justify-center gap-2">
+        📬 <span>Let’s talk</span>
+      </h2>
       <p class="text-slate-600 mt-1">Open to part-time roles and internships.</p>
       <div class="mt-4 flex items-center justify-center gap-3">
-        <a class="rounded-xl px-4 py-2 bg-brand-600 text-white hover:bg-brand-700 shadow" href="mailto:keerthanagarbani@gmail.com">Email me</a>
-        <a class="rounded-xl px-4 py-2 border hover:bg-brand-50" href="https://www.linkedin.com/in/keerthana-garbani-581420237" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        <a class="rounded-xl px-4 py-2 bg-brand-600 text-white hover:bg-brand-700 shadow transition" href="mailto:keerthanagarbani@gmail.com">Email me</a>
+        <a class="rounded-xl px-4 py-2 border hover:bg-brand-50 transition" href="https://www.linkedin.com/in/keerthana-garbani-581420237" target="_blank" rel="noopener">Connect on LinkedIn</a>
       </div>
     </div>
-    <p class="text-center text-xs text-slate-500 mt-6">© <span id="year"></span> Keerthana Garbani</p>
+    <p class="text-center text-xs text-slate-500 mt-6">
+      © <span id="year"></span> Keerthana Garbani • Made with a lot of ☕ & 💻
+    </p>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+
+
