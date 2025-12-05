@@ -43,13 +43,15 @@
   <!-- Header / Hero -->
   <header class="max-w-5xl mx-auto px-5 pt-10 pb-6">
     <div class="flex flex-col items-center text-center gap-3">
-      <h1 <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-800">
-  KEERTHANA GARBANI
-</h1>
 
-<img src="headshot.jpg" alt="Keerthana Garbani"
-     class="w-28 h-28 rounded-full ring-4 ring-brand-200 object-cover mt-3 shadow-soft"
-     loading="lazy" />
+      <!-- FIXED H1 TAG -->
+      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-brand-800">
+        KEERTHANA GARBANI
+      </h1>
+
+      <img src="headshot.jpg" alt="Keerthana Garbani"
+          class="w-28 h-28 rounded-full ring-4 ring-brand-200 object-cover mt-3 shadow-soft"
+          loading="lazy" />
 
       <p class="text-base md:text-lg text-slate-600">
         Graduate CS Student • Cloud/DevOps & Data Intern Candidate
@@ -135,7 +137,8 @@
       <a class="text-sm underline underline-offset-4 text-slate-600 hover:text-brand-700" href="https://github.com/GarbaniKeerthana" target="_blank" rel="noopener">All projects →</a>
     </div>
     <div class="grid md:grid-cols-2 gap-4">
-      <!-- ML Project card -->
+
+      <!-- ML Project -->
       <article class="rounded-2xl border bg-white p-4 shadow-soft">
         <div class="flex items-baseline justify-between gap-2">
           <h3 class="font-semibold leading-snug">Adversarial Attacks on GNNs (DeepFool)</h3>
@@ -186,13 +189,42 @@
           <span class="rounded-full bg-slate-100 text-slate-700 text-xs px-3 py-1">bc</span>
         </div>
       </article>
+
     </div>
   </section>
+
+
+  <!-- ⭐ NEW: INNOVATION / PATENT SECTION -->
+  <section class="max-w-5xl mx-auto px-5 py-6">
+    <h2 class="text-xl font-semibold mb-3 text-brand-800">Innovation &amp; Patent Concept</h2>
+    <div class="rounded-2xl border bg-white p-4 shadow-soft text-sm text-slate-700 space-y-2">
+      <p class="font-semibold">
+        Provisional Patent Concept — Smart Cross-Device Copy–Paste Accessory (Exploratory)
+      </p>
+      <p>
+        Designed a next-generation computing accessory that allows users to “copy” text, code,
+        or data from one device and “paste” it onto another without relying on cloud sync or
+        shared accounts. The concept functions like a physical productivity tool—similar to a keyboard
+        or mouse—but built specifically for secure, fast information transfer.
+      </p>
+      <ul class="list-disc pl-5 space-y-1">
+        <li>Stylus-like hardware device acting as a bridge between laptops, tablets, and desktops.</li>
+        <li>Offline, hardware-based transfer method aimed at protecting sensitive data.</li>
+        <li>Universal productivity companion for students, developers, and professionals.</li>
+        <li>Potential applicability for manufacturers (HP, Dell, Logitech, etc.).</li>
+      </ul>
+      <p class="text-xs text-slate-500">
+        Status: early-stage concept under evaluation for potential provisional patent filing.
+      </p>
+    </div>
+  </section>
+
 
   <!-- Experience -->
   <section class="max-w-5xl mx-auto px-5 py-6">
     <h2 class="text-xl font-semibold mb-3 text-brand-800">Experience</h2>
     <div class="grid md:grid-cols-2 gap-4">
+
       <div class="rounded-2xl border bg-white p-4 shadow-soft">
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <h3 class="font-semibold">Data Science Intern — BrainOvision</h3>
@@ -200,21 +232,23 @@
         </div>
         <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-700 text-sm">
           <li>Built data cleaning & feature engineering scripts; produced clear analysis summaries.</li>
-          <li>Automated small evaluation workflows; improved reproducibility with versioned notebooks.</li>
-          <li>Collaborated across teams; communicated results with concise visuals and notes.</li>
+          <li>Automated evaluation workflows; improved notebook reproducibility.</li>
+          <li>Collaborated across teams and communicated results with visuals and concise notes.</li>
         </ul>
       </div>
+
       <div class="rounded-2xl border bg-white p-4 shadow-soft">
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <h3 class="font-semibold">Data Science / AI & ML Intern — APSCHE (Andhra Pradesh, India)</h3>
           <span class="text-xs text-slate-500">Jan 2024 – Apr 2024</span>
         </div>
         <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-700 text-sm">
-          <li>Cleaned and analyzed datasets using Python (Pandas) and Excel; prepared stakeholder summaries.</li>
-          <li>Built and evaluated baseline ML models; documented methodology and results.</li>
-          <li>Prototyped decision-support workflow with a small team.</li>
+          <li>Cleaned and analyzed datasets using Python (Pandas) and Excel.</li>
+          <li>Built baseline ML models and documented results for stakeholders.</li>
+          <li>Prototyped workflow for decision-support system development.</li>
         </ul>
       </div>
+
     </div>
   </section>
 
@@ -228,6 +262,7 @@
           <span class="text-sm text-slate-500">M.S. Computer Science (CGPA 3.5/4.0), Expected Dec 2026</span>
         </div>
       </div>
+
       <div class="rounded-2xl border bg-white p-4 shadow-soft">
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
           <h3 class="font-medium">Sir C.R. Reddy College of Engineering, Eluru, India</h3>
@@ -253,5 +288,3 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
- 
-
